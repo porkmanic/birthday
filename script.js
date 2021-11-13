@@ -21,7 +21,7 @@ if (gongBirth.getTime() + day <= now1.getTime()) {
 let countDown = gongBirth.getTime();
 function x () {
 
-  document.getElementById('tt').innerText = "宝18岁生日倒计时:"
+  document.getElementById('tt').innerText = "宝不知第几个18岁生日倒计时:"
   let now = new Date().getTime(),
     distance = countDown - now;
 
