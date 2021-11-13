@@ -16,12 +16,12 @@ if (gongBirth.getTime() + day <= now1.getTime()) {
   lbj = calendar.lunar2solar(lnow.lYear + 1,lmonth,lday)
   gongBirth = new Date(lbj.cYear, lbj.cMonth - 1, lbj.cDay)
 } else if (now1.getTime() - gongBirth.getTime() > 0 && now1.getTime() - gongBirth.getTime() < day) {
-  window.location.href="https://porkmanic.github.io/birthd/2/";
+  window.location.href="2/";
 }
 let countDown = gongBirth.getTime();
 function x () {
 
-  document.getElementById('tt').innerText = "宝不知第几个18岁生日倒计时:"
+  document.getElementById('tt').innerText = "宝18岁(永远）生日倒计时:"
   let now = new Date().getTime(),
     distance = countDown - now;
 
